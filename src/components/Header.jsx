@@ -1,3 +1,4 @@
+import docCV from "../assets/Marchewczyk-Dawid-CV.pdf";
 import Button from "./Button";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -47,12 +48,14 @@ export default function Header() {
           <Button href="#projects" className={"button--primary"}>
             {"(View My Work)"}
           </Button>
-          <Button>{"(Download CV)"}</Button>
+          <Button href={docCV} download className={"button--secondary"}>
+            {"(Download CV)"}
+          </Button>
         </div>
       </div>
       <div className="header__center">
         <img
-          src="header-image.webp"
+          src="header-image-min.webp"
           alt="Header Image"
           role="presentation"
           fetchPriority="high"

@@ -7,9 +7,10 @@ const projects = [
     title: "[Tripper]",
     description:
       "A fully responsive web page brought to life from a Figma design, using React with TypeScript, animated with Framer Motion and GSAP, and styled with Sass.",
-    demoLink: "(get a demo)",
-    sourceCodeLink: "(source code)",
-    designPreviewLink: "(full design preview)",
+    demoLink: "https://tripper-website.netlify.app/",
+    sourceCodeLink: "https://github.com/Dimii3/Tripper-web",
+    designPreviewLink:
+      "https://www.behance.net/gallery/221134975/Web-design-Tripper",
     imageUrl: "project-image-1.webp",
   },
   {
@@ -17,9 +18,10 @@ const projects = [
     title: "[Formique]",
     description:
       "A fully responsive web page brought to life from a Figma design, using React with TypeScript, animated with Framer Motion and GSAP, and styled with Sass.",
-    demoLink: "(get a demo)",
-    sourceCodeLink: "(source code)",
-    designPreviewLink: "(full design preview)",
+    demoLink: "https://formique.netlify.app/ ",
+    sourceCodeLink: "https://github.com/Dimii3/Formique-website-react",
+    designPreviewLink:
+      "https://www.behance.net/gallery/224398957/Web-design-Formique",
     imageUrl: "project-image-2.webp",
   },
   {
@@ -27,7 +29,8 @@ const projects = [
     title: "[Soomia]",
     description:
       "A full web interface designed in Figma, with custom visual elements and image treatments created in Adobe Photoshop to enhance branding and visual impact.",
-    designPreviewLink: "(full design preview)",
+    designPreviewLink:
+      "https://www.behance.net/gallery/225007741/Web-design-soomia-beds",
     imageUrl: "project-image-3.webp",
   },
 ];
@@ -89,9 +92,31 @@ export default function Projects() {
                 <h3 className="project__title">{project.title}</h3>
                 <div className="project-item__bottom">
                   <div className="project-item__buttons">
-                    <Button className="button">(get a demo)</Button>
-                    <Button className="button">(source code)</Button>
-                    <Button className="button">(full design preview)</Button>
+                    {project.demoLink && (
+                      <Button
+                        target="_blank"
+                        href={project.demoLink}
+                        className="button"
+                      >
+                        (get a demo)
+                      </Button>
+                    )}
+                    {project.sourceCodeLink && (
+                      <Button
+                        target="_blank"
+                        href={project.sourceCodeLink}
+                        className="button"
+                      >
+                        (source code)
+                      </Button>
+                    )}
+                    <Button
+                      target="_blank"
+                      href={project.designPreviewLink}
+                      className="button"
+                    >
+                      (full design preview)
+                    </Button>
                   </div>
                   <p className="project__text section-text">
                     {project.description}

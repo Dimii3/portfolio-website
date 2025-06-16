@@ -30,6 +30,9 @@ export default function Menu() {
       <button
         className={`menu__btn ${menuOpen ? "active" : ""}`}
         onClick={() => setMenuOpen(!menuOpen)}
+        aria-label={menuOpen ? "Close menu" : "Open menu"}
+        aria-expanded={menuOpen}
+        aria-controls="main-menu"
       >
         <div className="menu__btn-line"></div>
         <div className="menu__btn-line"></div>

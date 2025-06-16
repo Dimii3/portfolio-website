@@ -1,4 +1,5 @@
 import React from "react";
+import docCV from "../assets/Marchewczyk-Dawid-CV.pdf";
 import Button from "./Button";
 
 const footerButtons = [
@@ -7,7 +8,7 @@ const footerButtons = [
     text: "LinkedIn",
     target: "_blank",
   },
-  { href: "", text: "Download CV" },
+  { href: docCV, text: "Download CV", download: true, target: "_blank" },
   { href: "https://github.com/Dimii3", text: "GitHub", target: "_blank" },
   { href: "https://www.behance.net/dimii", text: "Behance", target: "_blank" },
 ];
