@@ -11,6 +11,7 @@ export default function Header() {
       [
         ".header__heading",
         ".header__buttons",
+        ".header__center img",
         ".header__text",
         ".decoration-text__item",
       ],
