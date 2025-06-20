@@ -33,6 +33,15 @@ const projects = [
       "https://www.behance.net/gallery/225007741/Web-design-soomia-beds",
     imageUrl: "project-image-3.webp",
   },
+  {
+    id: 4,
+    title: "[Amora]",
+    description:
+      "A full web interface designed in Figma, with custom visual elements and image treatments created in Adobe Photoshop to enhance branding and visual impact.",
+    designPreviewLink:
+      "https://www.behance.net/gallery/228469683/Web-design-old-fashioned-Amora",
+    imageUrl: "project-image-4.webp",
+  },
 ];
 
 const otherProjects = [
