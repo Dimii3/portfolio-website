@@ -18,7 +18,7 @@ export default function App() {
       setIsFadingOut(true);
       setTimeout(() => {
         setIsLoading(false);
-      }, 800);
+      }, 600);
     };
 
     const crucialImages = ["/header-image-min.webp", "/logo.svg"];

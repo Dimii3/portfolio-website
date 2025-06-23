@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./Button";
+import { image } from "motion/react-client";
 
 const projects = [
   {
@@ -41,6 +42,15 @@ const projects = [
     designPreviewLink:
       "https://www.behance.net/gallery/228469683/Web-design-old-fashioned-Amora",
     imageUrl: "project-image-4.webp",
+  },
+  {
+    id: 5,
+    title: "[Cinebase Full stack]",
+    description:
+      "Cinebase is a responsive, full-stack web application built for discovering, searching, and saving your favorite movies. The project utilizes a modern tech stack based on React (frontend) and Node.js/Express (backend) with a MongoDB database.",
+    demoLink: "https://cinebase-stack.netlify.app/",
+    sourceCodeLink: "https://github.com/Dimii3/Cinebase-full-stack-app",
+    imageUrl: "project-image-5.webp",
   },
 ];
 
@@ -119,13 +129,15 @@ export default function Projects() {
                         (source code)
                       </Button>
                     )}
-                    <Button
-                      target="_blank"
-                      href={project.designPreviewLink}
-                      className="button"
-                    >
-                      (full design preview)
-                    </Button>
+                    {project.designPreviewLink && (
+                      <Button
+                        target="_blank"
+                        href={project.designPreviewLink}
+                        className="button"
+                      >
+                        (design preview)
+                      </Button>
+                    )}
                   </div>
                   <p className="project__text section-text">
                     {project.description}

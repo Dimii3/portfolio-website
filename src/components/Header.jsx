@@ -11,7 +11,7 @@ export default function Header() {
       [
         ".header__heading",
         ".header__buttons",
-        ".header__center img",
+        ".header__center",
         ".header__text",
         ".decoration-text__item",
       ],
@@ -33,10 +33,7 @@ export default function Header() {
         scrub: 0.5,
       },
       y: 250,
-      opacity: 0,
-      filter: "blur(5px)",
-      z: 200,
-      transformPerspective: 800,
+      scale: 1.2,
     });
   });
   return (
