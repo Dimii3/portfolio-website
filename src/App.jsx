@@ -6,8 +6,9 @@ import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Services from "./components/Services";
 import Lenis from "lenis";
-import Preloader from "./components/preloader";
+
 import { preloadImages } from "./utils.js/preloadImages";
+import Preloader from "./components/Preloader";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
