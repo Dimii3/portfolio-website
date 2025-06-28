@@ -1,5 +1,5 @@
 import React from "react";
-import docCV from "../assets/Marchewczyk-Dawid-CV.pdf";
+import docCV from "../assets/Dawid_Marchewczyk_CV.pdf";
 import Button from "./Button";
 
 const footerButtons = [

@@ -1,4 +1,4 @@
-import docCV from "../assets/Marchewczyk-Dawid-CV.pdf";
+import docCV from "../assets/Dawid_Marchewczyk_CV.pdf";
 import Button from "./Button";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
