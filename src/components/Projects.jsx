@@ -4,6 +4,24 @@ import { image } from "motion/react-client";
 
 const projects = [
   {
+    id: 6,
+    title: "[Nexora]",
+    description:
+      "A comprehensive web interface designed in Figma for Nexora, a company delivering AI-powered marketing automation solutions for businesses. The project leverages the latest trend web design practices, focusing on exceptional UI/UX and a strong brand identity. Custom visual elements and modern image treatments were crafted to enhance Nexora’s innovative presence, while the entire layout was built with RWD design principles to ensure seamless user experience across all devices.",
+    designPreviewLink:
+      "https://www.behance.net/gallery/229306381/Website-Logo-design-Nexora",
+    imageUrl: "project-image-7.webp",
+  },
+  {
+    id: 7,
+    title: "[1Flowww]",
+    description:
+      "A modern subpage redesign for a marketing agency, crafted in Figma with a strong focus on trend web design and advanced UI/UX principles. The project enhances the agency’s brand identity through custom visuals and carefully selected color palettes, while the entire layout follows RWD design standards to ensure an optimal experience across all devices. The updated subpage not only elevates visual appeal but also improves user engagement and conversion rates.",
+    designPreviewLink:
+      "https://www.behance.net/gallery/230010001/Web-design-redesign-subpage",
+    imageUrl: "project-image-6.webp",
+  },
+  {
     id: 1,
     title: "[Tripper]",
     description:
@@ -13,6 +31,15 @@ const projects = [
     designPreviewLink:
       "https://www.behance.net/gallery/221134975/Web-design-Tripper",
     imageUrl: "project-image-1.webp",
+  },
+  {
+    id: 4,
+    title: "[Amora]",
+    description:
+      "A full web interface designed in Figma, with custom visual elements and image treatments created in Adobe Photoshop to enhance branding and visual impact.",
+    designPreviewLink:
+      "https://www.behance.net/gallery/228469683/Web-design-old-fashioned-Amora",
+    imageUrl: "project-image-4.webp",
   },
   {
     id: 2,
@@ -34,15 +61,7 @@ const projects = [
       "https://www.behance.net/gallery/225007741/Web-design-soomia-beds",
     imageUrl: "project-image-3.webp",
   },
-  {
-    id: 4,
-    title: "[Amora]",
-    description:
-      "A full web interface designed in Figma, with custom visual elements and image treatments created in Adobe Photoshop to enhance branding and visual impact.",
-    designPreviewLink:
-      "https://www.behance.net/gallery/228469683/Web-design-old-fashioned-Amora",
-    imageUrl: "project-image-4.webp",
-  },
+
   {
     id: 5,
     title: "[Cinebase Full stack]",
