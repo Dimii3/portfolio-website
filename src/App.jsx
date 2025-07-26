@@ -22,7 +22,11 @@ export default function App() {
       }, 600);
     };
 
-    const crucialImages = ["/header-image-min.webp", "/logo.svg"];
+    const crucialImages = [
+      "/header-image-min.webp",
+      "/logo.svg",
+      "/bgc-pure.webm",
+    ];
 
     Promise.all([
       new Promise((resolve) => {

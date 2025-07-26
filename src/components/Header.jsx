@@ -25,7 +25,7 @@ export default function Header() {
       }
     );
 
-    gsap.to(".header__center img", {
+    gsap.to(".header__center", {
       scrollTrigger: {
         trigger: ".header",
         start: "top top ",
@@ -36,6 +36,7 @@ export default function Header() {
       scale: 1.2,
     });
   });
+
   return (
     <header className="container header header-container">
       <div className="header__left">
@@ -52,12 +53,13 @@ export default function Header() {
         </div>
       </div>
       <div className="header__center">
-        <img
+        {/* <img
           src="header-image-min.webp"
           alt="Header Image"
           role="presentation"
           fetchPriority="high"
-        />
+        /> */}
+        <video src="bgc-pure.webm" autoPlay loop muted></video>
       </div>
       <div className="header__right">
         <p className="header__text section-text">

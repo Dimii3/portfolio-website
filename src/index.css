@@ -106,8 +106,8 @@ img {
 
 .button {
   position: relative;
-  font-size: clamp(1.4rem, 1.5vw, 1.6rem);
-  padding: 1.2rem 4.8rem;
+  /* font-size: clamp(1.4rem, 1.5vw, 1.6rem); */
+  /* padding: 1.2rem 4.8rem; */
   border-radius: 10rem;
   border: 1px solid var(--white-color);
   transition: color 0.6s ease, background-color 0.6s ease, border 0.6s ease;
@@ -155,6 +155,51 @@ img {
   color: var(--white-color);
   background-color: var(--black-color);
   border: 1px solid var(--black-color);
+}
+
+.letters {
+  display: block;
+  overflow: hidden;
+}
+
+.letter {
+  position: relative;
+  display: inline-block;
+  font-size: inherit;
+  transition: color 0.3s;
+  will-change: transform, color;
+}
+
+.letter.space {
+  width: 0.2em;
+  display: inline-block;
+}
+
+.button-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(1.4rem, 1.5vw, 1.6rem);
+  padding: 1.2rem 4.8rem;
+}
+
+.letter::after {
+  content: attr(data-letter);
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .preloader {
@@ -261,6 +306,7 @@ img {
   display: flex;
   justify-content: space-between;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .header-container {
@@ -296,9 +342,16 @@ img {
 .header__center {
   position: absolute;
   bottom: 5rem;
-  left: 60%;
+  left: 70%;
   transform: translateX(-60%);
   z-index: -1;
+  overflow: hidden;
+  width: 100%;
+}
+.header__center video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .header__center img {
@@ -647,7 +700,7 @@ img {
   }
 
   .header__center img {
-    /* display: none; */
+    display: none;
     width: clamp(30rem, 40vw, 50rem);
   }
 
