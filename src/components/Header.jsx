@@ -24,17 +24,6 @@ export default function Header() {
         stagger: 0.2,
       }
     );
-
-    gsap.to(".header__center", {
-      scrollTrigger: {
-        trigger: ".header",
-        start: "top top ",
-        end: "bottom 30%",
-        scrub: 0.5,
-      },
-      y: 250,
-      scale: 1.2,
-    });
   });
 
   return (
